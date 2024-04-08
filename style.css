@@ -1,0 +1,164 @@
+/* Custom properties*/
+:root{
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+img, picture, video, iframe, figure{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+a{
+    display: block;
+}
+p a{
+    display: inline;
+}
+li{
+    list-style-type: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, em{
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+form, input, textarea, select, button, label{
+    font-family: inherit;
+    font: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+    color: inherit;
+}
+svg{
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+body{
+    height: 100dvb;
+    font-size: 100%;
+    font-family: var(--tipo-principal);
+    line-height: calc(1em + 0.5rem);
+    background: linear-gradient(180deg, #B594EF 34.84%, #F9B13F 100%);
+    width: 100%;
+
+    color: rgba(0, 0, 0, 0.70);
+    font-family: "Alfa Slab One";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*
+    1. Posicionamiento --> static, absolute, relative, fixed.
+    2. Modelo de caja (Box model) --> margin, border, padding, content.
+    3. Tipografía --> tipos, tamaños de fuente, etc.
+    4. Estilos visuales --> box-shadow, border-radius, gradient, etc.
+    5. Otros --> misceláneos, reglas CSS y más.
+*/
+
+
+/*media queries*/
+.game{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.875rem;
+    align-items: center;
+}
+.gameConsole {
+    border-radius: 30px 30px 80px 30px;
+    border: 1px solid #DBB94E;
+    background: #DBB94E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 100%;
+    padding: 1rem;
+    max-width: 280px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.gameContainer {
+    min-height: 64%;
+
+}
+.gameConsole__screen {
+    width: 100%;
+    border-radius: 35px;
+    border: 16px solid #392A39;
+    background: #B4D1CF;
+    height: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.gameMessaje {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 17.5rem;
+    width: 100%;
+}
+.gameMessaje span {
+    display: flex;
+    justify-content: space-between;
+}
+.gameConsole__controls {
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.gameConsole__controls--top {
+    grid-column: 2 / 3;
+}
+.gameConsole__controls--left {
+    grid-row: 2 / 3;
+}
+.gameConsole__controls--right {
+    grid-area: 2 / 3 / 3 / 3;
+}
+.gameConsole__controls--bottom {
+    grid-area: 3 / 2 / 3 / 3;
+}
+@media (width >= 320px) {
+
+}
+@media (width >= 375px) {
+
+}
+@media (width >= 425px) {
+
+}
+@media (width >= 768px) {
+
+}
+@media (width >= 1024px) {
+
+}
+@media (width >= 1440px) {
+
+}
+@media (width >= 2560px) {
+
+}
