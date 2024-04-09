@@ -92,21 +92,17 @@ body{
     border: 1px solid #DBB94E;
     background: #DBB94E;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    height: 100%;
     padding: 1rem;
-    max-width: 280px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-.gameContainer {
-    min-height: 64%;
-
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    align-items: center;
 }
 .gameConsole__screen {
-    width: 100%;
-    border-radius: 35px;
-    border: 16px solid #392A39;
+/*     border-radius: 35px;
+    border: 8px solid #392A39; */
     background: #B4D1CF;
-    height: 50%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .gameMessaje {
@@ -121,25 +117,32 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.gameConsole__controls span img{
+min-height: 2.5rem;
+}
 .gameConsole__controls {
-    height: 50%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
+    max-width: 11.25rem;
 }
 .gameConsole__controls--top {
     grid-column: 2 / 3;
+    
 }
 .gameConsole__controls--left {
     grid-row: 2 / 3;
+    transform: rotate(270deg);
 }
 .gameConsole__controls--right {
     grid-area: 2 / 3 / 3 / 3;
+    transform: rotate(90deg);
 }
 .gameConsole__controls--bottom {
     grid-area: 3 / 2 / 3 / 3;
+    transform: rotate(180deg);
 }
 @media (width >= 320px) {
 
@@ -151,13 +154,26 @@ body{
 
 }
 @media (width >= 768px) {
-
+    .game {
+        max-width: 1200px;
+        margin: auto;
+    }
 }
-@media (width >= 1024px) {
-
+@media (width >= 1024px)and (height <= 1000px) {
+    .game {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
-@media (width >= 1440px) {
-
+@media (width >= 1024px)and (height > 1000px) {
+    .game {
+        flex-direction: column;
+    }
+}
+@media (width >= 1440px)  {
+/*     .game {
+        flex-direction: row;
+    } */
 }
 @media (width >= 2560px) {
 
