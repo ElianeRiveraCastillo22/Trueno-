@@ -130,7 +130,6 @@ min-height: 2.5rem;
 }
 .gameConsole__controls--top {
     grid-column: 2 / 3;
-    
 }
 .gameConsole__controls--left {
     grid-row: 2 / 3;
@@ -171,9 +170,7 @@ min-height: 2.5rem;
     }
 }
 @media (width >= 1440px)  {
-/*     .game {
-        flex-direction: row;
-    } */
+
 }
 @media (width >= 2560px) {
 
